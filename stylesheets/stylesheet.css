@@ -2,5 +2,23 @@
 /* CSS Document */
 
 .jmHeaderTable{
-	background-image: url(https://raw.githubusercontent.com/ltn2003/hosting/gh-pages/images/wood-82392.png);
+	display: table; 
+	background-image: url("http://ltn2003.github.io/hosting/images/wood-82392.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+	height: 300px;
+	width: 100%;
 	}
+.jmHeaderRow { 
+	display: table-row; 
+
+	}
+.jmHeaderColumn{ 
+	display: table-column;
+
+	 }
+	 
+.jmHeaderCell{ 
+	display: table-cell;
+
+	 }
