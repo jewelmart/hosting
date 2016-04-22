@@ -43,6 +43,8 @@ background: rgb(30, 30, 30);
 color: #fff;
 padding-left: 13px;
 padding-right: 13px;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 }
