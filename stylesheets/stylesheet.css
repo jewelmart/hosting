@@ -70,7 +70,7 @@ border-top-right-radius: 5px;
 font-size:16px;
 padding: 12px 18px 8px 0; /* width + padding = 242px */
 overflow: hidden;
-background: #1d1c1a url(/img/ebay/ebay-sidebar-title-bg.png) right top no-repeat;
+background: #1d1c1a right top no-repeat;
 padding-left:15px;
 height: 20px;
 }
