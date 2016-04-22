@@ -27,3 +27,82 @@
 	display: table-cell;
 
 	 }
+
+ /* Store Left Navigation */	 
+ 
+ #LeftPanel {
+/*background:#eee;*/
+padding-top:20px;
+color: #fff;
+padding-left: 0px;
+padding-right: 10px;
+width: 260px;
+}
+#LeftPanel .v4mid, #LeftPanel .lcat {
+background: rgb(30, 30, 30);
+color: #fff;
+padding-left: 13px;
+padding-right: 13px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+#LeftPanel a {
+color: #fff;
+font-weight:normal;
+}
+#LeftPanel .v4mid a:hover, LeftPanel .v4mid a:active {
+color: #ff006b;
+font-weight:normal;
+text-decoration: none;
+}
+#LeftPanel .ttl {
+color: #fff;
+}
+#LeftPanel .v4midBox {
+border: 0px;
+}
+#LeftPanel .v4accent {
+display:none;
+}
+#LeftPanel .v4title {
+background: url('removed due to ebay's policies') no-repeat scroll 0% 0% rgb(10, 10, 10);
+font-size:16px;
+padding: 12px 18px 8px 0; /* width + padding = 242
+px */
+overflow: hidden;
+background: #1d1c1a url(/img/ebay/ebay-sidebar-title-bg.png) right top no-repeat;
+padding-left:15px;
+height: 20px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+#LeftPanel .v4baccent, #LeftPanel .v4vspacer {
+display:none;
+}
+#LeftPanel .v4nl td {
+color: #fff;
+}
+#LeftPanel .v4hspacer {
+display:none;
+}
+#LeftPanel .v4title font {
+font-size:small;
+color: #ff006b;
+letter-spacing: 3px;
+}
+#LeftPanel .lcat .lev2 li span {
+    color: #ff006b;
+}
+#LeftPanel .lcat .lev2 li span.cnt {
+    color: rgb(102, 102, 102);
+}
+#LeftPanel .fs2-fs table.fs2-strp {
+    background-color: rgb(50, 50, 50);
+    border: 1px solid rgb(100, 100, 100);
+}
+#LeftPanel .fs2-fs table.fs2-strp td {
+    border-left: 1px solid rgb(100, 100, 100);
+}
+ 
+ /* Product Left Navigation */
+	 
