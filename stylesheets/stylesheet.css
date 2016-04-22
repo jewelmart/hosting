@@ -67,8 +67,7 @@ display:none;
 #LeftPanel .v4title {
 background: url('removed due to ebay's policies') no-repeat scroll 0% 0% rgb(10, 10, 10);
 font-size:16px;
-padding: 12px 18px 8px 0; /* width + padding = 242
-px */
+/* padding: 12px 18px 8px 0; width + padding = 242px */
 overflow: hidden;
 background: #1d1c1a url(/img/ebay/ebay-sidebar-title-bg.png) right top no-repeat;
 padding-left:15px;
