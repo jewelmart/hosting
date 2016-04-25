@@ -116,7 +116,8 @@ letter-spacing: 3px;
 }
 
 .ProductListingHeader a  {
-   font-size: 2vw;
+   font-size: 1vw;
+   text-decoration: none;
   
 }
 
