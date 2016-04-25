@@ -110,7 +110,7 @@ letter-spacing: 3px;
 .ProductListingHeader{
 	display:table;
 }
-a.ProductListingHeader:hover {
+.ProductListingHeader a:hover {
     background-color: yellow;
 }
 
