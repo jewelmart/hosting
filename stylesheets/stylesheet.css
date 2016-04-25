@@ -114,7 +114,7 @@ letter-spacing: 3px;
     background-color: #c7c5c4;
 }
 
-.ProductListingHeader font {
+a.ProductListingHeader font {
    font-size: 3vm;
    text-align: center;
 }
