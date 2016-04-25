@@ -114,7 +114,7 @@ letter-spacing: 3px;
     background-color: #c7c5c4;
 }
 
-a.ProductListingHeader font {
+.ProductListingHeader a {
    font-size: 10vm;
    text-align: center;
 }
