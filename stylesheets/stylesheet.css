@@ -109,7 +109,6 @@ letter-spacing: 3px;
 }
 .ProductListingHeader{
 	display:table-row;
-	text-align: center;
 }
 .ProductListingHeader a:hover {
     background-color: #c7c5c4;
@@ -117,6 +116,7 @@ letter-spacing: 3px;
 
 .ProductListingHeader a font {
    font-size: 10vm;
+   text-align: center;
 }
 
 
