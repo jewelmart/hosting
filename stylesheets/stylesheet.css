@@ -103,24 +103,72 @@ letter-spacing: 3px;
 }
  
  /* Product Listing */
-.ProductListing {
+.PrdLst {
 	display:table;
+  border-spacing:1px;
+  border-collapse:collapse;
 	width: 100vw;	
-}
-.ProductListingHeader{
-	display:table-row;
-	 text-align: center;
-}
-.ProductListingHeader a:hover {
-    background-color: #c7c5c4;
-}
+  font-family: "Arial", Times, serif;
+  }
 
-.ProductListingHeader a  {
-   font-size: 1.5vw;
-   text-decoration: none;
+.PrdLstBanner {
+  display: table-row;
+  }
+
+.PrdLstHorznav {
+  display: table-row;
+  font-size: 2vw;
+  text-align: center;
+  }
+
+.PrdLstHorznav a:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+  }
+
+.PrdLstHorznav a  {
+  //font-size: 1.5vw;
+  color: #7e7e7e;
+  text-decoration: none;
+  }
+
+.PrdLstTitle {
+  text-align: center;
+  font-size: 2.5vw;
+  }
+
+.PrdLstDetail {
+  text-align: center;
+  font-weight: bold;
+  color: #7e7e7e;
+  }
+  
+.ProdLstDetail1, .ProdLstDetail2, .ProdLstDetail3 {
+  display: table-cell;
+  width:33.33vw;
+  height: 300px;
+  font-weight: normal;
+  padding:10px;
+  }
+  
+.ProdLstDetail1 {
+  background-image: url("http://jewelmart.github.io/hosting/images/15hctaa.jpg");
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-size: 99%;
+  vertical-align:bottom;
   
 }
+.ProdLstDetail2 {
+  background-image: url("http://jewelmart.github.io/hosting/images/ineset.jpg");
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-size: 99%;
+  }
+b::after {
+  content: "Sample Image";
+}
+.ProdLstDetail3 {
 
-
-
+  }
 
