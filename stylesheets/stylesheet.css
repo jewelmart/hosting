@@ -107,7 +107,7 @@ letter-spacing: 3px;
 .PrdLst {
 	display:table;
   border-collapse:separate;
-	width: 100vw;	
+	width: 960px;	
   font-family: "Arial", Times, serif;
   position: relative;
   box-sizing: border-box;
@@ -123,12 +123,12 @@ letter-spacing: 3px;
 
 /* Horizontal Nav */
 .PrdLstHorznav {
-  font-size: 2vw;
+  font-size: 3em;
   text-align: center;
   }
 .PrdLstVisitStore {
   display: inline-block;
-  font-size: 2vw;
+  font-size: .375em;
   color: #336b87;
   }
 .PrdLstVisitStore:hover {
@@ -143,7 +143,7 @@ letter-spacing: 3px;
 .PrdLstTitle {
   display: block;
   text-align: center;
-  font-size: 3vw;
+  font-size: 1.5em;
   font-weight:700;
   color: #336b87;
   margin-top: 2vw;
@@ -154,7 +154,7 @@ letter-spacing: 3px;
 .PrdLstDetailHeader:after, .ProdLstDesc:after, .ProdLstDiaBscs:after {
   display: block;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 1.2em;
   font-weight: bold;
   margin-top: 2vw;
   margin-bottom: 2vw;
@@ -166,51 +166,51 @@ letter-spacing: 3px;
   }
 .PrdLstDetail1, .PrdLstDetail2, .PrdLstDetail3  {
   display: inline-block;
-  width:33vw;
+  width:33%;
   vertical-align:middle;
   position: relative;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
-  margin-right: .1vw;  
+  margin-right: .1%;  
   }
 .PrdLstDetail1 img, .PrdLstDetail2 img, .PrdLstDetail3 img  {
   width: 100%;
 }
 .ProdLstDetail2Depth, .ProdLstDetail2Table, .ProdLstDetail2Culet, .ProdLstDetail2Girdle, .ProdLstDetail2Measurement {
-  font-size: 1.5vw;
+  font-size: .8em;
   position: absolute;
   }
 .ProdLstDetail2Depth {
-  bottom: 5vw;
-  left:1.6vw;
+  bottom:15%;
+  left:5%;
 }
 .ProdLstDetail2Depth::before {
   content: "Depth: ";
 }
 .ProdLstDetail2Table {
-  top:-1vw;
-  left: 11vw;
+  top:-3%;
+  left: 35%;
   }
 .ProdLstDetail2Table::before {
   content: "Table: ";
 }
 .ProdLstDetail2Culet {
-  bottom:-.3vw;
-  left:11vw;
+  bottom:-.3%;
+  left:35%;
   }
 .ProdLstDetail2Culet::before {
   content: "Culet: ";
 }
 .ProdLstDetail2Girdle {
-  top:19.8vw;
-  right:3vw;
+  top:82%;
+  right:11%;
   }
 .ProdLstDetail2Girdle::before {
   content: "Girdle: ";
 }
 .ProdLstDetail2Measurement {
-  bottom: -2.5vw;
-  left: 5vw;
+  bottom: -7%;
+  left: 25%;
   
   }
 .ProdLstDetail2Measurement::before {
@@ -228,7 +228,7 @@ letter-spacing: 3px;
   justify-content: center;
 }
 .ProdLstDescCol1, .ProdLstDescCol2, .ProdLstDescCol3, .ProdLstDescCol4 {
-  font-size: 1.5vw;
+  font-size: 1em;
   text-align: left;
   margin-left:.8vw;
 }
@@ -263,12 +263,11 @@ letter-spacing: 3px;
   content: "Diamond Basics";
   }  
 .ProdLstDiaBscsCut, .ProdLstDiaBscsColor, .ProdLstDiaBscsClarity, .ProdLstDiaBscsCarat {
-  text-align: left;
-  font-size: 2vw;
+  font-size: 1.1em;
   margin-top: 2vw;
   margin-bottom: 2vw;
   text-align: left;
-  text-indent: 15vw;
+  text-indent: 15%;
   font-weight: 700;
   }
 .ProdLstDiaBscsCut:before {
@@ -288,6 +287,7 @@ letter-spacing: 3px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  font-size:.8em;
   }
 #ProdLstDiaBscsCut img, #ProdLstDiaBscsColor img, #ProdLstDiaBscsClarity img, #ProdLstDiaBscsCarat img {
   display:block;
@@ -338,11 +338,11 @@ letter-spacing: 3px;
 
 /* Tab Control */
 .ProdLstTabs {
-  width: 80vw;
-  margin: 5vw auto;
+  width: 80%;
+  margin: 5% auto;
   }
 .PrdLstTabsWrapper {
-  border:.2vw solid grey;
+  border:.1em solid grey;
   }
 .PrdLstTabsWrapper > div {
   display: none;
@@ -353,7 +353,7 @@ label {
   display: inline-block;
   padding: 1vw;
   border: 1px solid grey;
-  font-size: 2vw;
+  font-size: 1.1em;
   //font-weight: 600;
   text-align: center;
   }
@@ -365,7 +365,7 @@ input:checked + label {background: #336b87; color: #fff;}
 #ReturnTab:checked ~ .PrdLstTabsWrapper #PrdLstTabReturn,
 #ContactTab:checked ~ .PrdLstTabsWrapper #PrdLstTabContact {
   display: block;
-  font-size: 1.5vw;
+  font-size: .8em;
    }
 #PrdLstTabPayment:after {
   word-wrap: normal;
