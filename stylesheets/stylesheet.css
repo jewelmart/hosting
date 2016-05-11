@@ -103,72 +103,299 @@ letter-spacing: 3px;
 }
  
  /* Product Listing */
+/* Product Listing wrapper */
 .PrdLst {
 	display:table;
-  border-spacing:1px;
-  border-collapse:collapse;
+  border-collapse:separate;
 	width: 100vw;	
   font-family: "Arial", Times, serif;
+  position: relative;
+  box-sizing: border-box;
+  background: white;
+  color: #283655;
   }
-
+  
+  /*  banner */
 .PrdLstBanner {
-  display: table-row;
-  }
+  display: block;
+  text-align: center;
+}
 
+/* Horizontal Nav */
 .PrdLstHorznav {
-  display: table-row;
   font-size: 2vw;
   text-align: center;
   }
-
-.PrdLstHorznav a:hover {
-    background-color: #4d4d4d;
-    color: #fff;
+.PrdLstVisitStore {
+  display: inline-block;
+  font-size: 2vw;
+  color: #336b87;
   }
-
-.PrdLstHorznav a  {
-  //font-size: 1.5vw;
-  color: #7e7e7e;
-  text-decoration: none;
+.PrdLstVisitStore:hover {
+  background-color: #90afc5;
+  color: #fff;
   }
+.PrdLstVisitStore:after {
+  content: url("http://stores.ebay.com/jewelmart03") "| View More Items On Sale |";
+}
 
+/* Listing Title */
 .PrdLstTitle {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  font-weight:700;
+  color: #336b87;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  }
+
+/* Sub headers*/
+.PrdLstDetailHeader:after, .ProdLstDesc:after, .ProdLstDiaBscs:after {
+  display: block;
   text-align: center;
   font-size: 2.5vw;
-  }
-
-.PrdLstDetail {
-  text-align: center;
   font-weight: bold;
-  color: #7e7e7e;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+/* Product Details */
+.PrdLstDetailHeader:after {
+  content: "Product Detail";
   }
+.PrdLstDetail1, .PrdLstDetail2, .PrdLstDetail3  {
+  display: inline-block;
+  width:33vw;
+  vertical-align:middle;
+  position: relative;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+  margin-right: .1vw;  
+  }
+.PrdLstDetail1 img, .PrdLstDetail2 img, .PrdLstDetail3 img  {
+  width: 100%;
+}
+.ProdLstDetail2Depth, .ProdLstDetail2Table, .ProdLstDetail2Culet, .ProdLstDetail2Girdle, .ProdLstDetail2Measurement {
+  font-size: 1.5vw;
+  position: absolute;
+  }
+.ProdLstDetail2Depth {
+  bottom: 5vw;
+  left:1.6vw;
+}
+.ProdLstDetail2Depth::before {
+  content: "Depth: ";
+}
+.ProdLstDetail2Table {
+  top:-1vw;
+  left: 11vw;
+  }
+.ProdLstDetail2Table::before {
+  content: "Table: ";
+}
+.ProdLstDetail2Culet {
+  bottom:-.3vw;
+  left:11vw;
+  }
+.ProdLstDetail2Culet::before {
+  content: "Culet: ";
+}
+.ProdLstDetail2Girdle {
+  top:19.8vw;
+  right:3vw;
+  }
+.ProdLstDetail2Girdle::before {
+  content: "Girdle: ";
+}
+.ProdLstDetail2Measurement {
+  bottom: -2.5vw;
+  left: 5vw;
   
-.ProdLstDetail1, .ProdLstDetail2, .ProdLstDetail3 {
-  display: table-cell;
-  width:33.33vw;
-  height: 300px;
+  }
+.ProdLstDetail2Measurement::before {
+  content: "Measurement: ";
+}
+
+/* Product Description */
+.ProdLstDesc:after {
+  content: "Product Description";
+  }
+.ProdLstDescWrapper {
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+  display: flex;
+  justify-content: center;
+}
+.ProdLstDescCol1, .ProdLstDescCol2, .ProdLstDescCol3, .ProdLstDescCol4 {
+  font-size: 1.5vw;
+  text-align: left;
+  margin-left:.8vw;
+}
+.ProdLstDescCol1{
+  display: inline-block;
+  } 
+.ProdLstDescCol1::before{
+  content: "Shape: \a Carat Weight: \a Color: \a Clarity: \a Cut: \a Polish: \a Symmetry: \a Measurement(mm):" ; 
+  white-space: pre;
+  line-height: 2vw;
+  }
+.ProdLstDescCol2{
+  display:inline-block;
+  line-height: 2vw;
+}  
+.ProdLstDescCol3{
+  display: inline-block;
+  margin-left:5vw;
+} 
+.ProdLstDescCol3::before{
+  content: "Fluorescence: \a Depth: \a Table: \a Girdle: \a Culet: \a Lab Report: \a Certificate ID: \a" ; 
+  white-space: pre; 
+  line-height: 2vw;
+  }
+.ProdLstDescCol4{
+  display:inline-block;
+  line-height: 2vw;
+  }
+
+/* Diamond Basics */
+.ProdLstDiaBscs:after {
+  content: "Diamond Basics";
+  }  
+.ProdLstDiaBscsCut, .ProdLstDiaBscsColor, .ProdLstDiaBscsClarity, .ProdLstDiaBscsCarat {
+  text-align: left;
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  text-align: left;
+  text-indent: 15vw;
+  font-weight: 700;
+  }
+.ProdLstDiaBscsCut:before {
+  content: "Cut";
+}
+.ProdLstDiaBscsColor:before {
+  content: "Color";
+}
+.ProdLstDiaBscsClarity:before {
+  content: "Clarity";
+}
+.ProdLstDiaBscsCarat:before {
+  content: "Carat";
+}
+#ProdLstDiaBscsCut, #ProdLstDiaBscsColor, #ProdLstDiaBscsClarity, #ProdLstDiaBscsCarat {
+  display:block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#ProdLstDiaBscsCut img, #ProdLstDiaBscsColor img, #ProdLstDiaBscsClarity img, #ProdLstDiaBscsCarat img {
+  display:block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#ProdLstDiaBscsCut:after {
+  content: "Cut quality determines how the diamond interact with light to create the visual appeal. Excellent cut allows maximum reflection of light and creates the most sparkle. In the case of a poor cut light enters the diamond and escape through the pavilion. Very little light is reflected when view from the top of the table. The quality of a cut is determined by the craftsmanship of the diamond manufacturer. Notice in the chart above the red area represents more light reflected in an excellent cut versus a poor cut."; 
+  display: block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: normal;
-  padding:10px;
+  text-indent: 0;
+  text-align: justify;
   }
-  
-.ProdLstDetail1 {
-  background-image: url("http://jewelmart.github.io/hosting/images/15hctaa.jpg");
-  background-position: center center;
-  background-repeat:no-repeat;
-  background-size: 99%;
-  vertical-align:bottom;
-  
-}
-.ProdLstDetail2 {
-  background-image: url("http://jewelmart.github.io/hosting/images/ineset.jpg");
-  background-position: center center;
-  background-repeat:no-repeat;
-  background-size: 99%;
+#ProdLstDiaBscsColor:after {
+  content: "The color of white diamonds are grade from colorless to light, ranging from D to Z. D quality diamonds are colorless and will be of higher value. Some color distribution tend to be subtle and can be difficult to determined with an untrained eye. That is why all diamonds that we sell are graded by professional laboratories to assure confidence to our buyers."; 
+  display: block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  text-indent: 0;
+  text-align: justify;
   }
-b::after {
-  content: "Sample Image";
-}
-.ProdLstDetail3 {
+#ProdLstDiaBscsClarity:after {
+  content: "All natural diamonds are unique with internal characteristics. These internal characteristics are called inclusions while flaws on the surface of diamond are called blemishes. Diamonds that exhibit more inclusions, such as cloud, needle, knots, feathers, and pinpoints, tend to be less clear and can decrease the value of the diamond. Certain inclusions and blemishes are not visible to the naked eye but can still affect the brilliance of the diamond."; 
+  display: block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  text-indent: 0;
+  text-align: justify;
+  }
+#ProdLstDiaBscsCarat:after {
+  content: "Carat is unit of measurement use to weigh diamonds. 1 carat (ct) is equivalent to 100 points. Precision is required to weigh diamonds as larger diamonds tend to be rarer and has higher value. Precision in weight is important to determine the value of the diamond. "; 
+  display: block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  text-indent: 0;
+  text-align: justify;
+  }
 
+/* Tab Control */
+.ProdLstTabs {
+  width: 80vw;
+  margin: 5vw auto;
   }
+.PrdLstTabsWrapper {
+  border:.2vw solid grey;
+  }
+.PrdLstTabsWrapper > div {
+  display: none;
+  padding: 1vw 2vw ;
+  }
+input {display: none;}
+label {
+  display: inline-block;
+  padding: 1vw;
+  border: 1px solid grey;
+  font-size: 2vw;
+  //font-weight: 600;
+  text-align: center;
+  }
+label:hover {background: #90afc5;color: #fff; cursor: pointer;}
+input:checked + label {background: #336b87; color: #fff;}
 
+#PaymentTab:checked ~ .PrdLstTabsWrapper #PrdLstTabPayment,
+#ShippingTab:checked ~ .PrdLstTabsWrapper #PrdLstTabShipping,
+#ReturnTab:checked ~ .PrdLstTabsWrapper #PrdLstTabReturn,
+#ContactTab:checked ~ .PrdLstTabsWrapper #PrdLstTabContact {
+  display: block;
+  font-size: 1.5vw;
+   }
+#PrdLstTabPayment:after {
+  word-wrap: normal;
+  content: "- We accept the following payments: Paypal, Visa, Master Card, American Express, Discover, and Bank Wire \a - International Payments are accepted by Credit Card, PayPal, or Bankwire. \a - We ship to the shipping address you provide during the Ebay checkout. \a - Items are not shipped until full payment has been received. \a - Certain purchases will qualify for discounts if buyer pays by bankwire. Please contact us prior to purchase. ";   
+  white-space: pre-line	;
+}
+#PrdLstTabShipping:after {
+  word-wrap: normal;
+  content: "All orders are shipped within 3 to 4 business days after receiving full payment. \a \a Domestic Shipments: \a Most of our items are available with free shipping. All items are shipped with USPS, FedEx, or UPS shipping services. \a \a International shipments: \a International shipments are sent via USPS Express Mail International or FEDEX International Express. Buyers are responsible for covering the custom import duties and taxes for international orders. \a \a Packages are only shipped during the week days excluding holidays. \a We reserve the right to decline Paypal payment with unverified account or unconfirmed address.";   
+  white-space: pre-line	;
+}
+#PrdLstTabReturn:after {
+  word-wrap: normal;
+  content: "You may return any of your purchased items, for any reason, within 14 days of purchase, to receive a full refund.You will  have to pay for shipping the item back to us. \a \a In order to qualify for a refund you must follow these steps: \a \a 1. The returned product must be received within 14 days from date of purchase. \a 2. You must contact us within 3 days of receiving the item to let us know that your intention to return. \a 3. We than will provide you with the return address. \a 4. You must attach with the item and all original documents that came with it. If you purchased loose diamonds, you must return the original certificate to us. All items must be in its original packing in order to receive a full refund. \a 5. Please provide us with a tracking number once you have shipped to us. \a 6. Upon receiving we will inspect the content of the package and will issue a refund after 24 hours. \a 7. You must confirm the cancellation email from Ebay. We will refund to any account that was originally used to make the purchase. \a \a Please do not hesitate to contact us if you have any questions or concerns.";   
+  white-space: pre-line	;
+}  
+#PrdLstTabContact:after {
+  word-wrap: normal;
+  content: "Please contact us using our live chat service. We will respond to all messages within 24 hours.";   
+  white-space: pre-line	;
+}  
+
+/*Smartphones */  
+@media only screen and (max-width : 600px){
+ 
+ .PrdLstDetail1, .PrdLstDetail2, .PrdLstDetail3  {
+  display: block;
+  width:100vw;
+  }
+  #ProdLstDiaBscsCut, #ProdLstDiaBscsColor, #ProdLstDiaBscsClarity, #ProdLstDiaBscsClarity {
+  margin-top: 2vw;
+  }
+ }
