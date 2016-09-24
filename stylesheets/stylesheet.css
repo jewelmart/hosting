@@ -1,113 +1,7 @@
-@charset "utf-8";
-/* CSS Document */
-
-.jmHeaderTable{
-	display: table; 
-}
-
-.jmHeaderRow1 {
-	display: table-row;
-}
-
-.jmHeaderRow1 img { 
-	width: 100%;
-    height: auto;
-	
-}
-.jmHeaderRow{ 
-	display: table-row; 
-	}
-	
-.jmHeaderColumn{ 
-	display: table-column;
-
-	 }
-	 
-.jmHeaderCell{ 
-	display: table-cell;
-
-	 }
-
- /* Store Left Navigation */	 
- 
- #LeftPanel {
-/*background:#eee;*/
-padding-top:20px;
-color: #fff;
-padding-left: 0px;
-padding-right: 10px;
-
-}
-#LeftPanel .v4mid, #LeftPanel .lcat {
-background: rgb(30, 30, 30);
-color: #fff;
-padding-left: 13px;
-padding-right: 13px;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-}
-#LeftPanel a {
-color: #fff;
-font-weight:normal;
-}
-#LeftPanel .v4mid a:hover, LeftPanel .v4mid a:active {
-color: #ff006b;
-font-weight:normal;
-text-decoration: none;
-}
-#LeftPanel .ttl {
-color: #fff;
-}
-#LeftPanel .v4midBox {
-border: 0px;
-}
-#LeftPanel .v4accent {
-display:none;
-}
-#LeftPanel .v4title {
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-font-size:16px;
-padding: 12px 18px 8px 0; /* width + padding = 242px */
-overflow: hidden;
-background: #1d1c1a right top no-repeat;
-padding-left:15px;
-height: 20px;
-}
-#LeftPanel .v4baccent, #LeftPanel .v4vspacer {
-display:none;
-}
-#LeftPanel .v4nl td {
-color: #fff;
-}
-#LeftPanel .v4hspacer {
-display:none;
-}
-#LeftPanel .v4title font {
-font-size:small;
-color: #00B0FF;
-letter-spacing: 3px;
-}
-#LeftPanel .lcat .lev2 li span {
-    color: #ff006b;
-}
-#LeftPanel .lcat .lev2 li span.cnt {
-    color: rgb(102, 102, 102);
-}
-#LeftPanel .fs2-fs table.fs2-strp {
-    background-color: rgb(50, 50, 50);
-    border: 1px solid rgb(100, 100, 100);
-}
-#LeftPanel .fs2-fs table.fs2-strp td {
-    border-left: 1px solid rgb(100, 100, 100);
-}
- 
- /* Product Listing */
 /* Product Listing wrapper */
 .PrdLst {
-	display:table;
   border-collapse:separate;
-	width: 960px;	
+	width: auto;	
   font-family: "Arial", Times, serif;
   position: relative;
   box-sizing: border-box;
@@ -147,7 +41,7 @@ letter-spacing: 3px;
   font-weight:700;
   color: #336b87;
   margin-top:1%;
-  margin-bottom:1%;
+  margin-bottom:4%;
   }
 
 /* Sub headers*/
@@ -166,12 +60,12 @@ letter-spacing: 3px;
   }
 .PrdLstDetail1, .PrdLstDetail2, .PrdLstDetail3  {
   display: inline-block;
-  width:33%;
+  width:32%;
   vertical-align:middle;
   position: relative;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  margin-right: .1%;  
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: .30%;  
   }
 .PrdLstDetail1 img, .PrdLstDetail2 img, .PrdLstDetail3 img  {
   width: 100%;
@@ -188,7 +82,7 @@ letter-spacing: 3px;
   content: "Depth: ";
 }
 .ProdLstDetail2Table {
-  top:-3%;
+  top:-4%;
   left: 35%;
   }
 .ProdLstDetail2Table::before {
@@ -208,18 +102,12 @@ letter-spacing: 3px;
 .ProdLstDetail2Girdle::before {
   content: "Girdle: ";
 }
-.ProdLstDetail2Measurement {
-  bottom: -7%;
-  left: 25%;
-  
-  }
-.ProdLstDetail2Measurement::before {
-  content: "Measurement: ";
-}
 
 /* Product Description */
 .ProdLstDesc:after {
   content: "Product Description";
+  margin-top: 1%;
+  margin-bottom: 1%;
   }
 .ProdLstDescWrapper {
   display: -webkit-flex; /* Safari */
@@ -231,31 +119,34 @@ letter-spacing: 3px;
   font-size: 1em;
   text-align: left;
   margin-left:.8vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .ProdLstDescCol1{
-  display: inline-block;
+  display: block;
   } 
 .ProdLstDescCol1::before{
   content: "Shape: \a Carat Weight: \a Color: \a Clarity: \a Cut: \a Polish: \a Symmetry: \a Measurement(mm):" ; 
   white-space: pre;
-  line-height: 2vw;
+  line-height: 1.1em;
   }
-.ProdLstDescCol2{
-  display:inline-block;
-  line-height: 2vw;
+.ProdLstDescCol2 br{
+  display:block;
+  line-height: 1.1em;
+
 }  
-.ProdLstDescCol3{
-  display: inline-block;
+.ProdLstDescCol3 {
+  display: block;
   margin-left:5vw;
 } 
 .ProdLstDescCol3::before{
   content: "Fluorescence: \a Depth: \a Table: \a Girdle: \a Culet: \a Lab Report: \a Certificate ID: \a" ; 
   white-space: pre; 
-  line-height: 2vw;
+  line-height: 1.1em;
   }
-.ProdLstDescCol4{
-  display:inline-block;
-  line-height: 2vw;
+.ProdLstDescCol4 br{
+  display: block;
+  line-height: 1.1em;
   }
 
 /* Diamond Basics */
@@ -338,7 +229,7 @@ letter-spacing: 3px;
 
 /* Tab Control */
 .ProdLstTabs {
-  width: 80%;
+  width: 80vw;
   margin: 5% auto;
   }
 .PrdLstTabsWrapper {
