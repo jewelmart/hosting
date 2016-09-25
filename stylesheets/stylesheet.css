@@ -275,7 +275,7 @@ input:checked + label {background: #336b87; color: #fff;}
 }  
 #PrdLstTabContact:after {
   word-wrap: normal;
-  content: "Please contact us using our live chat service. We will respond to all messages within 24 hours.";   
+  content: "Please contact us using our live chat service. You may also contact us at (408) 692-5148. Feel free to text or leave a detail message. We will respond to all messages within 24 hours.";   
   white-space: pre-line	;
 }  
 
